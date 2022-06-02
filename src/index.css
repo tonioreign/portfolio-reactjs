@@ -1,8 +1,8 @@
 :root {
     --color__primary: rgb(41, 191, 255);
     --color__secondary: #fe692a;
-    --color__primary-variant: rgba(41, 190, 254, 0.5);
-    --color__secondary-variant: rgba(254, 105, 42, 0.5);
+    --color__primary-variant: rgba(41, 190, 254, 0.2);
+    --color__secondary-variant: rgba(254, 105, 42, 0.2);
     --color__bg: rgb(10, 25, 47);
     --color__white: rgb(255, 255, 255);
     --color__white-variant: rgba(255, 255, 255, 0.7);
@@ -13,11 +13,22 @@
 ::after {
     margin: 0;
     padding: 0;
+    letter-spacing: 1.7;
     box-sizing: border-box;
+    font-family: 'Roboto Mono', monospace;
+}
+
+html {
+    scroll-behavior: smooth;
 }
 
 a {
     text-decoration: none;
+    color: var(--color__white-variant);
+}
+
+a:hover {
+    color: var(--color__primary);
 }
 
 li {
