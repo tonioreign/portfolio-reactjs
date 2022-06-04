@@ -1,0 +1,11 @@
+.social__icon {
+    font-size: 24px !important;
+    color: var(--color__white-variant) !important;
+    transition: all 120ms ease-in !important;
+}
+
+.social__icon:hover {
+    color: var(--color__primary) !important;
+    cursor: pointer !important;
+    transform: scale(1.1) !important;
+}

@@ -11,7 +11,11 @@ function Navbar() {
             <Logo src="./img/logo.png" />
             <NavMenu>
                 <Wrap>
-                    <HomeIcon style={{ color: 'var(--color__primary)' }} />
+                    <HomeIcon
+                        style={{
+                            color: 'var(--color__primary)',
+                        }}
+                    />
                     <a href="#">Home</a>
                 </Wrap>
                 <Wrap>
