@@ -1,5 +1,6 @@
 import React from 'react';
 import styled from 'styled-components';
+import About from '../about/About';
 
 function Home() {
     return (
@@ -23,9 +24,10 @@ function Home() {
 export default Home;
 
 const Container = styled.div`
-    max-width: 1000px;
-    margin: 0 auto;
-    width: 75vw;
+    // max-width: 1000px;
+    // margin: 0 auto;
+    // width: 75vw;
+    // height: 100vh;
 `;
 
 const Title = styled.div`

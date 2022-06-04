@@ -3,6 +3,7 @@ import './App.css';
 import styled from 'styled-components';
 import Navbar from './components/navbar/Navbar';
 import Home from './components/home/Home';
+import About from './components/about/About';
 import GitHubIcon from '@mui/icons-material/GitHub';
 import LinkedInIcon from '@mui/icons-material/LinkedIn';
 import InstagramIcon from '@mui/icons-material/Instagram';
@@ -20,7 +21,12 @@ function App() {
                 <span></span>
             </RightSocial>
             <Navbar />
-            <Home />
+            <Wrap>
+                <Home />
+            </Wrap>
+            <Wrap>
+                <About />
+            </Wrap>
             <LeftSocial>
                 <h4>tonioreign@gmail.com</h4>
                 <span></span>
@@ -33,13 +39,11 @@ export default App;
 
 const Container = styled.div`
     width: 100%;
-    height: 100vh;
     background: var(--color__bg);
-    position: relative;
 `;
 
 const RightSocial = styled.div`
-    position: absolute;
+    position: fixed;
     bottom: 0;
     left: 0;
     display: flex;
@@ -56,7 +60,7 @@ const RightSocial = styled.div`
 `;
 
 const LeftSocial = styled.div`
-    position: absolute;
+    position: fixed;
     right: 0;
     bottom: 0;
     color: var(--color__white-variant);
@@ -80,4 +84,11 @@ const LeftSocial = styled.div`
         height: 90px;
         background: var(--color__white-variant);
     }
+`;
+
+const Wrap = styled.div`
+    max-width: 1000px;
+    margin: 0 auto;
+    width: 75vw;
+    height: 100vh;
 `;

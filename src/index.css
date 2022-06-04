@@ -1,4 +1,5 @@
 :root {
+    /* colors */
     --color__primary: rgb(41, 191, 255);
     --color__secondary: #fe692a;
     --color__primary-variant: rgba(41, 190, 254, 0.2);
@@ -6,6 +7,11 @@
     --color__bg: rgb(10, 25, 47);
     --color__white: rgb(226, 226, 226);
     --color__white-variant: rgba(255, 255, 255, 0.7);
+
+    /* fonts */
+    --font__lg: 5rem;
+    --font__md: 3rem;
+    --font__sm: 1.5rem;
 }
 
 *,
@@ -20,6 +26,8 @@
 
 html {
     scroll-behavior: smooth;
+    background: var(--color__bg);
+    font-size: 10px;
 }
 
 a {
