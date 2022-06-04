@@ -20,15 +20,15 @@ function Navbar() {
                 </Wrap>
                 <Wrap>
                     <InfoIcon style={{ color: 'var(--color__primary)' }} />
-                    <a href="#">About</a>
+                    <a href="#about">About</a>
                 </Wrap>
                 <Wrap>
                     <WebIcon style={{ color: 'var(--color__primary)' }} />
-                    <a href="#">Projects</a>
+                    <a href="#projects">Projects</a>
                 </Wrap>
                 <Wrap>
                     <ContactsIcon style={{ color: 'var(--color__primary)' }} />
-                    <a href="#">Contact</a>
+                    <a href="#contact">Contact</a>
                 </Wrap>
                 <Resume>Resume</Resume>
             </NavMenu>
@@ -43,6 +43,12 @@ const Nav = styled.div`
     align-items: center;
     justify-content: space-between;
     padding: 15px 40px;
+    height: 74px;
+    z-index: 999;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
 `;
 const Logo = styled.img`
     width: 74px;

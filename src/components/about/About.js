@@ -5,7 +5,7 @@ import ArrowRightIcon from '@mui/icons-material/ArrowRight';
 
 function About() {
     return (
-        <Container>
+        <Container id="about">
             <Title>
                 {' '}
                 <span></span>
@@ -104,6 +104,8 @@ const Title = styled.div`
     align-items: center;
     gap: 10px;
     margin-bottom: 7.5vh;
+    padding-top: 7.5vh;
+    margin-top: 7.5vh;
 
     h2 {
         font-size: var(--font__md);

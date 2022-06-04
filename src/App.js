@@ -9,6 +9,8 @@ import LinkedInIcon from '@mui/icons-material/LinkedIn';
 import InstagramIcon from '@mui/icons-material/Instagram';
 import TwitterIcon from '@mui/icons-material/Twitter';
 import YouTubeIcon from '@mui/icons-material/YouTube';
+import Projects from './components/projects/Projects';
+import Contact from './components/contact/Contact';
 function App() {
     return (
         <Container>
@@ -26,6 +28,12 @@ function App() {
             </Wrap>
             <Wrap>
                 <About />
+            </Wrap>
+            <Wrap>
+                <Projects />
+            </Wrap>
+            <Wrap>
+                <Contact />
             </Wrap>
             <LeftSocial>
                 <h4>tonioreign@gmail.com</h4>
@@ -74,6 +82,8 @@ const LeftSocial = styled.div`
         text-orientation: mixed;
         cursor: pointer;
         transition: all 125ms ease-in;
+        font-size: var(--font__sm);
+        letter-spacing: 1.7;
         &:hover {
             color: var(--color__primary);
             transform: scale(1.05);

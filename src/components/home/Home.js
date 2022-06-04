@@ -24,20 +24,24 @@ function Home() {
 export default Home;
 
 const Container = styled.div`
-    // max-width: 1000px;
-    // margin: 0 auto;
-    // width: 75vw;
-    // height: 100vh;
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    // align-items: center;
+    justify-content: center;
 `;
 
 const Title = styled.div`
     margin-top: 50px;
     display: flex;
+    // align-items: center;
     gap: 15px;
     max-width: 800px;
     flex-direction: column;
     h4 {
         color: var(--color__primary);
+        font-size: var(--font__sm);
     }
     h1 {
         color: var(--color__white);
