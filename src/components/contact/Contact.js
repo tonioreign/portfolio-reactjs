@@ -18,6 +18,9 @@ function Contact() {
                 <span></span>
             </Title>
             <h2>Get In Touch</h2>
+            <ContactMe>
+                <a>CONTACT ME</a>
+            </ContactMe>
         </Wrapper>
     );
 }
@@ -30,6 +33,7 @@ const Wrapper = styled.div`
     display: flex;
     flex-direction: column;
     align-items: center;
+    gap: 3rem;
     padding-top: 7.5vh;
 
     h2 {
@@ -54,5 +58,64 @@ const Title = styled.div`
         width: 100px;
         height: 1px;
         background: var(--color__white-variant);
+    }
+`;
+
+const ContactMe = styled.div`
+    // display: inline-block;
+    // color: var(--color__white-variant);
+    // font-size: var(--font__sm);
+    // margin-top: 4rem;
+    // position: relative;
+    // padding: 12px 16px;
+    // border: 1px solid var(--color__primary);
+    // border-radius: 6px;
+    // cursor: pointer;
+    // overflow: hidden;
+
+    a {
+        display: inline-block;
+        color: var(--color__primary);
+        font-size: var(--font__sm);
+        margin-top: 4rem;
+        position: relative;
+        padding: 14px 24px;
+        border: 1px solid var(--color__primary);
+        border-radius: 4px;
+        cursor: pointer;
+        z-index: 2;
+        overflow: hidden;
+    }
+
+    a::before,
+    a::after {
+        content: '';
+        position: absolute;
+        top: 0;
+        width: 50%;
+        height: 100%;
+        background-color: var(--color__primary);
+        z-index: -1;
+        transform: scaleX(0);
+        transition: transform 500ms cubic-bezier(0.785, 0.135, 0.15, 0.86);
+    }
+
+    a::before {
+        left: 0;
+        transform-origin: left;
+    }
+    a::after {
+        right: 0;
+        transform-origin: right;
+    }
+
+    a:hover::before,
+    a:hover::after {
+        transform: scaleX(1);
+    }
+
+    a:hover {
+        color: var(--color__secondary);
+        transition-delay: 500ms;
     }
 `;

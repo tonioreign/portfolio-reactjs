@@ -67,10 +67,28 @@ const Wrap = styled.div`
     align-items: center;
     gap: 5px;
     cursor: pointer;
+    position: relative;
     a {
         letter-spacing: 1.7;
         font-size: 14px;
         transition: color 250ms ease-in;
+    }
+
+    &::before {
+        content: '';
+        position: absolute;
+        bottom: -3px;
+        left: 0;
+        width: 100%;
+        height: 1px;
+        background: var(--color__primary);
+        transform: scaleX(0);
+        transform-origin: right;
+        transition: transform 250ms;
+    }
+    &:hover::before {
+        transform: scaleX(1);
+        transform-origin: left;
     }
 `;
 
