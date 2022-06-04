@@ -9,7 +9,8 @@ function Home() {
                 <h1>Antonio Jenkins</h1>
                 <h2>I am a Frontend Developer</h2>
                 <p>
-                    I'm a software engineer specializing in building exceptional
+                    I'm a software engineer specializing in building exceptional{' '}
+                    <br />
                     digital experience. Currently focused on the frontend
                     development.
                 </p>
@@ -24,12 +25,14 @@ export default Home;
 const Container = styled.div`
     max-width: 1000px;
     margin: 0 auto;
+    width: 75vw;
 `;
 
 const Title = styled.div`
     margin-top: 50px;
     display: flex;
     gap: 15px;
+    max-width: 800px;
     flex-direction: column;
     h4 {
         color: var(--color__primary);
