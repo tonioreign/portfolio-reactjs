@@ -1,26 +1,32 @@
 import React from 'react';
 import styled from 'styled-components';
 import ContactsIcon from '@mui/icons-material/Contacts';
+import { Fade } from 'react-reveal';
 
 function Contact() {
     return (
         <Wrapper id="contact">
             <Title>
-                {' '}
-                <span></span>
-                <ContactsIcon
-                    style={{
-                        fontSize: 'var(--font__md)',
-                        color: 'var(--color__primary)',
-                    }}
-                />
-                <h2>What's Next?</h2>
-                <span></span>
+                <Fade bottom>
+                    {' '}
+                    <span></span>
+                    <ContactsIcon
+                        style={{
+                            fontSize: 'var(--font__md)',
+                            color: 'var(--color__primary)',
+                        }}
+                    />
+                    <h2>What's Next?</h2>
+                    <span></span>
+                </Fade>
             </Title>
-            <h2>Get In Touch</h2>
-            <ContactMe>
-                <a>CONTACT ME</a>
-            </ContactMe>
+            <Fade bottom>
+                <h2>Get In Touch</h2>
+
+                <ContactMe>
+                    <a>CONTACT ME</a>
+                </ContactMe>
+            </Fade>
         </Wrapper>
     );
 }

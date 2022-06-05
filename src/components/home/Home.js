@@ -1,22 +1,24 @@
 import React from 'react';
 import styled from 'styled-components';
-import About from '../about/About';
+import { Fade } from 'react-reveal';
 
 function Home() {
     return (
         <Container>
-            <Title>
-                <h4>Hi, my name is </h4>
-                <h1>Antonio Jenkins</h1>
-                <h2>I am a Frontend Developer</h2>
-                <p>
-                    I'm a software engineer specializing in building exceptional{' '}
-                    <br />
-                    digital experience. Currently focused on the frontend
-                    development.
-                </p>
-                <Resume>Download Resume</Resume>
-            </Title>
+            <Fade>
+                <Title bottom cascade>
+                    <h4>Hi, my name is </h4>
+                    <h1>Antonio Jenkins</h1>
+                    <h2>I am a Frontend Developer</h2>
+                    <p>
+                        I'm a software engineer specializing in building
+                        exceptional <br />
+                        digital experience. Currently focused on the frontend
+                        development.
+                    </p>
+                    <Resume>Download Resume</Resume>
+                </Title>
+            </Fade>
         </Container>
     );
 }

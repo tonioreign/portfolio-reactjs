@@ -11,6 +11,8 @@ import TwitterIcon from '@mui/icons-material/Twitter';
 import YouTubeIcon from '@mui/icons-material/YouTube';
 import Projects from './components/projects/Projects';
 import Contact from './components/contact/Contact';
+import Footer from './components/footer/Footer';
+
 function App() {
     return (
         <Container>
@@ -39,6 +41,7 @@ function App() {
                 <h4>tonioreign@gmail.com</h4>
                 <span></span>
             </LeftSocial>
+            <Footer />
         </Container>
     );
 }

@@ -2,21 +2,26 @@ import { Container } from '@mui/system';
 import React from 'react';
 import styled from 'styled-components';
 import WebIcon from '@mui/icons-material/Web';
+import { Fade } from 'react-reveal';
+
 function Projects() {
     return (
         <Containers id="projects">
-            <Title>
-                {' '}
-                <span></span>
-                <WebIcon
-                    style={{
-                        fontSize: 'var(--font__md)',
-                        color: 'var(--color__primary)',
-                    }}
-                />
-                <h2>Things I've Built</h2>
-                <span></span>
-            </Title>
+            <Fade bottom cascade>
+                <Title>
+                    {' '}
+                    <span></span>
+                    <WebIcon
+                        style={{
+                            fontSize: 'var(--font__md)',
+                            color: 'var(--color__primary)',
+                        }}
+                    />
+                    <h2>Things I've Built</h2>
+                    <span></span>
+                </Title>
+            </Fade>
+            <ProjectContainer></ProjectContainer>
         </Containers>
     );
 }
@@ -51,3 +56,5 @@ const Title = styled.div`
         background: var(--color__white-variant);
     }
 `;
+
+const ProjectContainer = styled.div``;
