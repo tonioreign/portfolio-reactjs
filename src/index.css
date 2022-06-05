@@ -4,7 +4,8 @@
     --color__secondary: #fe692a;
     --color__primary-variant: rgba(41, 190, 254, 0.2);
     --color__secondary-variant: rgba(254, 105, 42, 0.2);
-    --color__bg: rgb(10, 25, 47);
+    --color__bg: #0a192f;
+    --color__bg-variant: #10294f;
     --color__white: rgb(226, 226, 226);
     --color__white-variant: rgba(255, 255, 255, 0.7);
 

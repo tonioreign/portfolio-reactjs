@@ -1,0 +1,9 @@
+.iconProject {
+    cursor: pointer !important;
+    transition: all 250ms ease-in !important;
+}
+
+.iconProject:hover {
+    color: var(--color__primary) !important;
+    transform: scale(1.1);
+}
