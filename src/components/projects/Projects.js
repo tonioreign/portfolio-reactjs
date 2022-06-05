@@ -103,7 +103,10 @@ const Title = styled.div`
     }
 `;
 
-const ProjectContainer = styled.div``;
+const ProjectContainer = styled.div`
+    height: 60vh;
+    width: 100%;
+`;
 
 const ProjectWrap = styled.div`
     display: flex;
@@ -143,6 +146,8 @@ const ProjectDescription = styled.div`
     gap: 20px;
 `;
 const Techs = styled.div`
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
     span {
         color: var(--color__white-variant);
         font-size: var(--font__sm);
