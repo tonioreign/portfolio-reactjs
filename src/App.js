@@ -103,5 +103,4 @@ const Wrap = styled.div`
     max-width: 1000px;
     margin: 0 auto;
     width: 75vw;
-    height: 100vh;
 `;

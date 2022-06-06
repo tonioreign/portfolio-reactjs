@@ -57,6 +57,24 @@ const Title = styled.div`
         color: var(--color__white-variant);
         font-size: 16px;
     }
+
+    @media (max-width: 768px) {
+        justify-content: center;
+        align-items: center;
+        width: max-content;
+        margin-left: 75px;
+        h1 {
+            color: var(--color__white);
+            font-size: var(--font__lg);
+        }
+        h2 {
+            color: var(--color__white-variant);
+            font-size: var(--font__md);
+        }
+        p {
+            display: none;
+        }
+    }
 `;
 const Resume = styled.button`
     margin-top: 25px;
